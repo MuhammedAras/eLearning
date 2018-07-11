@@ -1,0 +1,10 @@
+A:\Projeler\ASP.Net\eLearning\Learning.Data\obj\Debug\Learning.Data.csprojResolveAssemblyReference.cache
+A:\Projeler\ASP.Net\eLearning\Learning.Data\bin\Debug\Learning.Data.dll.config
+A:\Projeler\ASP.Net\eLearning\Learning.Data\bin\Debug\Learning.Data.dll
+A:\Projeler\ASP.Net\eLearning\Learning.Data\bin\Debug\Learning.Data.pdb
+A:\Projeler\ASP.Net\eLearning\Learning.Data\bin\Debug\EntityFramework.dll
+A:\Projeler\ASP.Net\eLearning\Learning.Data\bin\Debug\EntityFramework.SqlServer.dll
+A:\Projeler\ASP.Net\eLearning\Learning.Data\bin\Debug\EntityFramework.xml
+A:\Projeler\ASP.Net\eLearning\Learning.Data\bin\Debug\EntityFramework.SqlServer.xml
+A:\Projeler\ASP.Net\eLearning\Learning.Data\obj\Debug\Learning.Data.dll
+A:\Projeler\ASP.Net\eLearning\Learning.Data\obj\Debug\Learning.Data.pdb
