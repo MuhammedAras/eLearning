@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Learning.Data.Entities
 {
-    class LearningContextMigrationConfiguration: DbMigrationsConfiguration<LearningContext>
+    public class LearningContextMigrationConfiguration: DbMigrationsConfiguration<LearningContext>
     {
         public LearningContextMigrationConfiguration()
         {

@@ -39,13 +39,13 @@ namespace Learning.Data.Mapper
             this.Property(s => s.Gender).IsOptional();
 
             this.Property(s => s.DateofBirth).IsRequired();
-            this.Property(s => s.DateofBirth).HasColumnType("smalldatetime");
+            this.Property(s => s.DateofBirth).HasColumnType("datetime2");
 
             this.Property(s => s.RegistrationDate).IsOptional();
-            this.Property(s => s.RegistrationDate).HasColumnType("smalldatetime");
+            this.Property(s => s.RegistrationDate).HasColumnType("datetime2");
 
             this.Property(s => s.LastLoginDate).IsOptional();
-            this.Property(s => s.LastLoginDate).HasColumnType("smalldatetime");
+            this.Property(s => s.LastLoginDate).HasColumnType("datetime2");
         }
     }
 }

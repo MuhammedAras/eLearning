@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Courses.cs" />
+    <Compile Include="ILearningRepository.cs" />
     <Compile Include="LearningContext.cs" />
     <Compile Include="Entities\Enrollments.cs" />
     <Compile Include="Entities\Gender.cs" />
@@ -58,6 +59,7 @@
     <Compile Include="Entities\Subjects.cs" />
     <Compile Include="Entities\Tutors.cs" />
     <Compile Include="LearningDataSeeder.cs" />
+    <Compile Include="LearningRepository.cs" />
     <Compile Include="Mapper\CourseMapper.cs" />
     <Compile Include="Mapper\EnrollmentMapper.cs" />
     <Compile Include="Mapper\StudentMapper.cs" />

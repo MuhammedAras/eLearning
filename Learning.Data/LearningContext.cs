@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Learning.Data.Entities
 {
-    class LearningContext :DbContext
+   public class LearningContext :DbContext
     {
         public LearningContext() :
             base("eLearningConnection")

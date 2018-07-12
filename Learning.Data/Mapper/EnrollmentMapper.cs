@@ -19,7 +19,7 @@ namespace Learning.Data.Mapper
             this.Property(c => c.Id).HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.Identity);
 
             this.Property(c => c.EnrollmentDate).IsRequired();
-            this.Property(c => c.EnrollmentDate).HasColumnType("smalldatetime");
+            this.Property(c => c.EnrollmentDate).HasColumnType("datetime2");
 
             this.HasOptional(c => c.Course).WithMany(e => e.Enrollments).Map(s=>s.MapKey("CourseId")).WillCascadeOnDelete(false);
             this.HasOptional(c => c.Student).WithMany(e => e.Enrollments).Map(s => s.MapKey("StudentId")).WillCascadeOnDelete(false) ;
