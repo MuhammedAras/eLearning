@@ -30,3 +30,12 @@ A:\Projeler\ASP.Net\eLearning\Learning.Web\bin\EntityFramework.xml
 A:\Projeler\ASP.Net\eLearning\Learning.Web\obj\Debug\Learning.Web.csprojResolveAssemblyReference.cache
 A:\Projeler\ASP.Net\eLearning\Learning.Web\obj\Debug\Learning.Web.dll
 A:\Projeler\ASP.Net\eLearning\Learning.Web\obj\Debug\Learning.Web.pdb
+A:\Projeler\ASP.Net\eLearning\Learning.Web\bin\Microsoft.Web.Infrastructure.dll
+A:\Projeler\ASP.Net\eLearning\Learning.Web\bin\Ninject.dll
+A:\Projeler\ASP.Net\eLearning\Learning.Web\bin\Ninject.Web.Common.dll
+A:\Projeler\ASP.Net\eLearning\Learning.Web\bin\WebActivator.dll
+A:\Projeler\ASP.Net\eLearning\Learning.Web\bin\WebApiContrib.IoC.Ninject.dll
+A:\Projeler\ASP.Net\eLearning\Learning.Web\bin\Ninject.pdb
+A:\Projeler\ASP.Net\eLearning\Learning.Web\bin\Ninject.xml
+A:\Projeler\ASP.Net\eLearning\Learning.Web\bin\Ninject.Web.Common.pdb
+A:\Projeler\ASP.Net\eLearning\Learning.Web\bin\Ninject.Web.Common.xml
