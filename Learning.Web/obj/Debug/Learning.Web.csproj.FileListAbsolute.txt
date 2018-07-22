@@ -19,7 +19,6 @@ A:\Projeler\ASP.Net\eLearning\Learning.Web\bin\Newtonsoft.Json.dll
 A:\Projeler\ASP.Net\eLearning\Learning.Web\bin\System.Net.Http.Formatting.dll
 A:\Projeler\ASP.Net\eLearning\Learning.Web\bin\System.Web.Http.dll
 A:\Projeler\ASP.Net\eLearning\Learning.Web\bin\System.Web.Http.WebHost.dll
-A:\Projeler\ASP.Net\eLearning\Learning.Web\bin\EntityFramework.dll
 A:\Projeler\ASP.Net\eLearning\Learning.Web\bin\Learning.Data.pdb
 A:\Projeler\ASP.Net\eLearning\Learning.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 A:\Projeler\ASP.Net\eLearning\Learning.Web\bin\Newtonsoft.Json.xml

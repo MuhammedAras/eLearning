@@ -11,7 +11,6 @@ namespace Learning.Data.Entities
         public Students()
         {
             Enrollments = new List<Enrollments>();
-
         }
         public int Id { get; set; }
         public string Email { get; set; }

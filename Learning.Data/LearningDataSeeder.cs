@@ -1,6 +1,7 @@
 ﻿using Learning.Data.Entities;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -62,6 +63,7 @@ namespace Learning.Data
                             Description = String.Format("The course will talk in depth about: {0}", CourseDataItem.CourseName)
                         };
                         _ctx.Courses.Add(course);
+                         Debug.WriteLine("Course Eklendi.\n");
                     }
                 }
 
@@ -81,6 +83,7 @@ namespace Learning.Data
                         DateofBirth = DateTime.UtcNow.AddDays(-new Random().Next(7000, 8000)),
                         RegistrationDate = DateTime.UtcNow.AddDays(-new Random().Next(365, 730))
                     };
+                    Debug.WriteLine(student.FirstName + " " + student.LastName + "");
 
                     _ctx.Students.Add(student);
 
@@ -101,7 +104,6 @@ namespace Learning.Data
                         _ctx.Enrollments.Add(enrollment);
                     }
                 }
-
                 _ctx.SaveChanges();
             }
             catch (Exception ex)

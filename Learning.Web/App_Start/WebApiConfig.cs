@@ -21,6 +21,11 @@ namespace Learning.Web
                 routeTemplate: "api/courses/{id}",
                 defaults: new { controller="courses", id = RouteParameter.Optional }
             );
+            config.Routes.MapHttpRoute(
+                    name: "Students",
+                    routeTemplate: "api/students/{userName}",
+                    defaults: new { controller = "students", userName = RouteParameter.Optional }
+                    );
 
             var jsonFormatter = config.Formatters.OfType<JsonMediaTypeFormatter>().First();
             jsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();

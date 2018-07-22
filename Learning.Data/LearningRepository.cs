@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Learning.Data.Entities;
+using System.Diagnostics;
 
 namespace Learning.Data
 {
@@ -101,7 +102,7 @@ namespace Learning.Data
                     .Include("Enrollments.Course")
                      .Include("Enrollments.Course.CourseSubject")
                      .Include("Enrollments.Course.CourseTutor")
-                    .AsQueryable();
+                     .AsQueryable();
         }
 
         public IQueryable<Subjects> GetAllSubject()
@@ -157,6 +158,7 @@ namespace Learning.Data
 
         public Students GetStudentsEnrollments(string UserName)
         {
+          
             var student = _ctx.Students
                           .Include("Enrollments")
                           .Include("Enrollments.Course")
@@ -234,5 +236,6 @@ namespace Learning.Data
             _ctx.Entry(originalStudents).CurrentValues.SetValues(updatedStudent);
             return true;
         }
+        
     }
 }
