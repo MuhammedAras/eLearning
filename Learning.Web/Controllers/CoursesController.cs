@@ -7,6 +7,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Routing;
 
 namespace Learning.Web.Controllers
 {
@@ -16,16 +17,32 @@ namespace Learning.Web.Controllers
         {
         }
 
-        public IEnumerable<CourseModel> Get()
+        public Object Get(int page = 0, int pageSize = 10)
         {
             IQueryable<Courses> query;
-            query = TheRepository.GetAllCourses();
+            query = TheRepository.GetAllCourses().OrderBy(s=>s.CourseSubject.Id);
+            var totalCount = query.Count();
+            var totalPages = (int)Math.Ceiling((double)totalCount / pageSize);
+
+            var urlHelper = new UrlHelper(Request);
+            var prevLink = page > 0 ? urlHelper.Link("Courses", new { page = page - 1 }) : "";
+            var nextLink = page < totalPages - 1 ? urlHelper.Link("Courses", new { page = page + 1 }) : "";
 
             var results = query
+            .Skip(page*pageSize)
+            .Take(pageSize)
             .ToList()
             .Select(s => TheModelFactory.Create(s));
 
-            return results;
+            return new
+            {
+                TotalCount = totalCount,
+                TotalPages = totalPages,
+                PrevPageLink = prevLink,
+                NextPageLink = nextLink,
+                Results = results
+            };
+            
         }
         public HttpResponseMessage GetCourse(int id)
         {

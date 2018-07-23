@@ -9,6 +9,7 @@ using Learning.Web.Models;
 using Learning.Data.Entities;
 using System.Web.Http.Routing;
 using System.Diagnostics;
+using Learning.Web.Filters;
 
 namespace Learning.Web.Controllers
 {
@@ -16,8 +17,8 @@ namespace Learning.Web.Controllers
     {
         public StudentsController(ILearningRepository repo) : base(repo)
         { }
-
-            public IEnumerable<StudentBaseModel> Get(int page=0, int pageSize=10)
+        [LearningAuthorizeAttribute]
+        public IEnumerable<StudentBaseModel> Get(int page=0, int pageSize=10)
         {
             
             IQueryable<Students> query;
