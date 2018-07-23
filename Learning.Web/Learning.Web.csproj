@@ -112,6 +112,9 @@
     <Compile Include="Controllers\CoursesController.cs" />
     <Compile Include="Controllers\EnrollmentsController.cs" />
     <Compile Include="Controllers\StudentsController.cs" />
+    <Compile Include="Controllers\StudentsV2Controller.cs" />
+    <Compile Include="Filters\ForceHttpsAttribute.cs" />
+    <Compile Include="Filters\LearningAuthorizeAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -120,6 +123,7 @@
     <Compile Include="Models\ModelFactory.cs" />
     <Compile Include="Models\StudentBaseModel.cs" />
     <Compile Include="Models\StudentModel.cs" />
+    <Compile Include="Models\StudentV2BaseModel.cs" />
     <Compile Include="Models\SubjectModel.cs" />
     <Compile Include="Models\TutorModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
